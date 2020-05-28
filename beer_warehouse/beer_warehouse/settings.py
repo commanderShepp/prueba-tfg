@@ -120,7 +120,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = 'beer_warehouse_live/'
 STATICFILES_DIRS = (
-    'beer_warehouse/static',
+     'beer_warehouse/beer_warehouse/static',
 )
 MEDIA_URL = '/media/'
 MEDIA_ROOT = ''
