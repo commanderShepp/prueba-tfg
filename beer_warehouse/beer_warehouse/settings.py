@@ -25,7 +25,7 @@ SECRET_KEY = '$!#2_kno#hgd4+c0+cg)o@ywx)s#@vvv99ypt6$u!%@k$*9cyi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -117,10 +117,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_URL = 'beer_warehouse/beer_warehouse/static/'
-STATIC_ROOT = 'beer_warehouse_live/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
 STATICFILES_DIRS = (
-    'beer_warehouse/static',
+    os.path.join(BASE_DIR, 'static'),
 )
 MEDIA_URL = '/media/'
 MEDIA_ROOT = ''
