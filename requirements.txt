@@ -1,1 +1,2 @@
 django == 3.0.4
+whitenoise == 5.1.0
