@@ -1,0 +1,55 @@
+{% load static %}
+<html>
+<head>
+    <!-- Ajustamos el contenido de nuestra página web a cualquier resolución de pantalla -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Libertalia</title>
+
+
+</head>
+<body>
+ <!-- Incluimos el menú superior que hemos creado en el archivo navbar.html -->
+{% include 'navbar.html' %}
+
+<!-- Incluimos un jumbotron para poder presentar nuestra página web -->
+<main role="main" class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="jumbotron jumbotron-fluid" id="jumboInicio">
+      <div class="container">
+        <h1>Bienvenidxs a Libertalia</h1>
+        <p class="lead">"Y recuerda siempre mirar siempre a las estrellas, aunque nuestro pies apenas se puedan levantar
+del suelo."</p>
+          <a class="btn btn-lg btn-primary" href="#" role="button">Aventúrate</a>
+      </div>
+    </div>
+</main>
+
+ <!-- Cargamos el contenido de los cuentos que hemos diseñado previamente  -->
+{% block content %}
+{% endblock %}
+<hr>
+<footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © MyWebsite. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+ <!-- Cargamos los archivos estáticos que dan formato al contenido de nuestra página web -->
+    <script src="{% static 'node_modules/jquery/dist/jquery.js' %}"></script>
+    <link href="{% static 'node_modules/bootstrap/dist/css/bootstrap.css' %}" rel="stylesheet"/>
+    <script src="{% static 'node_modules/bootstrap/dist/js/bootstrap.js' %}"></script>
+    <script src="{% static 'node_modules/popper.js/dist/popper.min.js' %}"></script>
+    <link href="{% static 'css/starter-template.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/style_list_view.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</body>
+</html>

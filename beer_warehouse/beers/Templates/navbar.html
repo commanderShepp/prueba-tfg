@@ -1,0 +1,21 @@
+{% load static %}
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#"><img src="{% static 'img/Logo.png' %}" width="100px" height="50px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'beer-list-view' %}">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'all-beers-list-view' %}">Cuentos</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="libertalia/templates/" >Juego interactivo</a>
+      </li>
+    </ul>
+  </div>
+</nav>
