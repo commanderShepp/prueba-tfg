@@ -121,8 +121,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/Lussy/prueba-tfg/static'
-
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 MEDIA_URL = '/media/'
-MEDIA_ROOT = ''
+MEDIA_ROOT = '/home/Lussy/prueba-tfg/static'
 TEMPLATE_DIRS = ('C:/Users/Lussy/PycharmProjects/beer_warehouse_live/beer_warehouse/beers/Templates', )
